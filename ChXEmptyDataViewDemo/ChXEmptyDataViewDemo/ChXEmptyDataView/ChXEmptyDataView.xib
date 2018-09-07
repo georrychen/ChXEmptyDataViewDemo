@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChXEmptyDataView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyIcon_noData" translatesAutoresizingMaskIntoConstraints="NO" id="xc6-NS-pDC">
+                    <rect key="frame" x="127.5" y="100" width="120" height="120"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无数据" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVh-80-gRg">
+                    <rect key="frame" x="10" y="240" width="355" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.61568627450980395" green="0.66666666666666663" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有报名学习，没有可加入的班级" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoS-kz-ZRr">
+                    <rect key="frame" x="10" y="269.5" width="355" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dv-r3-kec">
+                    <rect key="frame" x="35" y="299.5" width="305" height="40"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.3411764705882353" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2ef-i0-UJM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="点击重试"/>
+                    <connections>
+                        <action selector="nextStepButtonSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="mOz-Ge-KFn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xc6-NS-pDC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="146-tz-MkH"/>
+                <constraint firstAttribute="trailing" secondItem="AVh-80-gRg" secondAttribute="trailing" constant="10" id="4Hf-Ie-aC0"/>
+                <constraint firstAttribute="trailing" secondItem="IoS-kz-ZRr" secondAttribute="trailing" constant="10" id="90Q-Pp-6Ck"/>
+                <constraint firstItem="IoS-kz-ZRr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AY6-MX-eKK"/>
+                <constraint firstItem="AVh-80-gRg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BMQ-r0-Bko"/>
+                <constraint firstItem="5dv-r3-kec" firstAttribute="top" secondItem="AVh-80-gRg" secondAttribute="bottom" constant="40" id="Bp6-wC-IXh"/>
+                <constraint firstAttribute="trailing" secondItem="5dv-r3-kec" secondAttribute="trailing" constant="35" id="OdT-9r-MsF"/>
+                <constraint firstItem="IoS-kz-ZRr" firstAttribute="top" secondItem="AVh-80-gRg" secondAttribute="bottom" constant="10" id="Y7q-Rr-9te"/>
+                <constraint firstItem="AVh-80-gRg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ahS-7p-Idv"/>
+                <constraint firstItem="IoS-kz-ZRr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="u3v-Fw-kQh"/>
+                <constraint firstItem="5dv-r3-kec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="35" id="vMf-dJ-bD2"/>
+                <constraint firstItem="xc6-NS-pDC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="vfs-PO-xjb"/>
+                <constraint firstItem="AVh-80-gRg" firstAttribute="top" secondItem="xc6-NS-pDC" secondAttribute="bottom" constant="20" id="zdl-QU-Nii"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailLabel" destination="IoS-kz-ZRr" id="dU4-8c-lTE"/>
+                <outlet property="imageView" destination="xc6-NS-pDC" id="7h9-zG-8HW"/>
+                <outlet property="imageViewTopCons" destination="vfs-PO-xjb" id="Saz-Mz-PRh"/>
+                <outlet property="nextButton" destination="5dv-r3-kec" id="Yjw-8b-0Mm"/>
+                <outlet property="nextButtonTopCons" destination="Bp6-wC-IXh" id="RWv-Ed-8HU"/>
+                <outlet property="titleLabel" destination="AVh-80-gRg" id="hB3-uJ-cdh"/>
+            </connections>
+            <point key="canvasLocation" x="-341" y="-169"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emptyIcon_noData" width="120" height="120"/>
+    </resources>
+</document>
